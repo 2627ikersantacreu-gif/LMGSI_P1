@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pàgina de contacte per enviar dubtes i suggeriments.">
+    <title>Contacte</title>
+    <link rel="icon" type="image/png" href="usuario.png">
+</head>
+<body>
+    <header>
+        <h2>CONTACTA AMB NOSALTRES</h2>
+        <p>Tens algun dubte o suggeriment? Escriu-nos</p>
+    </header>
+    <main>
+        <section>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgXF44A_XI_9SsIzzPsIcx_KBgxE3pbpJL_199zOCSiQ&s" height="125px">
+            <h3>Iker Santacreu Torres<br>Alumne · Desenvolupament web</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quís nostrud exercitation.</p>
+        </section>
+        <section>
+            <h3>Envia'ns un missatge</h3>
+            <form action="/enviar" method="post">
+                <label for="Nom">Nom i cognoms</label>
+                <input type="text" id="nom" name="nom" placeholder="El teu nom complet" required>
+                <br>
+                <label for="email">Correu electrònic</label>
+                <input type="email" id="email" name="email" placeholder="nom@exemple.cat" required>
+                <br>
+                <label for="Assumpte">Assumpte</label>
+                <input type="text" id="aussmpte" name="assumpte" placeholder="Sobre què ens vols escriure?">
+                <br>
+                <label for="Missatge">Missatge</label>
+                <br><textarea id="missatge" name="missatge" placeholder="Escriu aquí el teu missatge..."></textarea>
+                <br>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
