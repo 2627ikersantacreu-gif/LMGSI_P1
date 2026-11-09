@@ -1,0 +1,154 @@
+/* ===== DISTRIBUCIÓ (codi donat, no el modifiqueu) ===== */
+
+nav { display: flex; justify-content: space-between; align-items: center; }
+nav ul { display: flex; gap: 32px; }
+.resultats { display: flex; gap: 24px; }
+.targeta { flex: 1; }
+
+
+/* ===== ELS VOSTRES ESTILS ===== */
+
+body {
+  font-family: "Work Sans", sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header{
+  background-color: #0b3a5e;
+  padding: 15px 24px;
+  color:aliceblue;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+
+  a {
+  display: flex;
+  align-items: center;
+  }
+}
+
+nav ul {
+  margin: 10px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: right;
+  margin-bottom: 12px;
+  align-items: center;
+}
+
+nav a:hover,
+button:hover {
+  color: #01b4e4;
+}
+
+.targeta,
+nav {
+  color: #032541;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.buscador {
+  background-color: #032541;
+  color: aliceblue;
+  text-align: center;
+  padding: 32px 24px;
+
+  input[type="search"] {
+  width: 70%;
+  border: none;
+  background-color: rgb(48, 105, 180);
+  color: white;
+  padding: 12px 20px;
+  border-radius: 20px 0 0 20px;
+  font-family: inherit;
+  }
+
+  input[type="search"]::placeholder {
+    color:lightgrey;
+  }
+
+  form {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  max-width: 800px;
+  margin: 0 auto;
+  }
+
+  button {
+    background-color: cyan;
+    border: none;
+    font-weight: bold;
+    padding: 12px 24px;
+    border-radius: 0 20px 20px 0;
+    font-family: inherit;
+  }
+  
+  p {
+    font-size: 14px;
+    color: lightgrey;
+    display: block;
+    margin-bottom: 15px;
+  }
+}
+
+label[for="cerca-nav"] {
+  color: aliceblue;
+}
+
+.pelicules {
+  padding: 40px 24px;
+  
+  h2 {
+  margin-bottom: 24px;
+  }
+}
+
+.targeta {
+  background-color: #032541;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.targeta img {
+  width: 100%;
+  height: 250px;
+  border-radius: 15px 15px 0 0;
+  object-fit: cover;
+}
+
+.targeta h3 {
+  color: white;
+  font-size: 18px;
+  padding: 0 16px;
+  margin: 12px 0 4px 0;
+}
+
+.targeta .any {
+  color: #90cea1;
+  padding: 0 16px;
+  margin: 0 0 16px 0;
+}
+
+.any {
+  color: #90cea1;
+}
+
+footer{
+  background-color: #032541;
+  color:aliceblue;
+  font-size: 14px;
+  padding: 20px 24px;
+  text-align: center;
+}

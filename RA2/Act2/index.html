@@ -4,6 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Enlace CSS -->
+    <link rel="stylesheet" href="../Act4/css/estils.css">
+
+    <!--Enlace google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <!--Actividad -->
     <meta name="description" content="Descobreix pel·lícules i consulta els resultats de Cars, Cars 2 i Cars 3.">
     <title>Cercador de pel·lícules</title>
 </head>
@@ -19,31 +28,18 @@
 
         <nav>
             <ul>
-                <li>
-                    <form method="get" action="https://www.themoviedb.org/search">
-                        <label for="cerca-nav">Cerca una pel·lícula</label>
-                        <input
-                            type="search"
-                            id="cerca-nav"
-                            name="query"
-                            placeholder="Buscar una pel·lícula"
-                            required
-                        >
-                        <button type="submit">Buscar</button>
-                    </form>
-                </li>
-                <li>Contacte</li>
+                <li><a href="#">Buscador</a></li>
+                <li><a href="contacte.html">Contacte</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section>
+        <section class="buscador">
             <h1>Buscar una pel·lícula</h1>
             <p>Milions de títols, un sol cercador.</p>
 
             <form method="get" action="https://www.themoviedb.org/search">
-                <label for="cerca-principal">Cerca una pel·lícula</label>
                 <input
                     type="search"
                     id="cerca-principal"
@@ -55,44 +51,46 @@
             </form>
         </section>
 
-        <section>
+        <section class="pelicules">
             <h2>Resultats</h2>
 
-            <article>
-                <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_cqHPZAbEpp0_1h4hEBEeaiPpx1jFgF1xlt7CNExcZQ&amp;s=10">
-                    <img
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_cqHPZAbEpp0_1h4hEBEeaiPpx1jFgF1xlt7CNExcZQ&amp;s=10"
-                        height="175"
-                        alt="Cartell de la pel·lícula Cars"
-                    >
-                </a>
-                <h3>Cars</h3>
-                <p>2006</p>
-            </article>
+            <div class="resultats">
+                <article class="targeta">
+                    <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_cqHPZAbEpp0_1h4hEBEeaiPpx1jFgF1xlt7CNExcZQ&amp;s=10">
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_cqHPZAbEpp0_1h4hEBEeaiPpx1jFgF1xlt7CNExcZQ&amp;s=10"
+                            height="175"
+                            alt="Cartell de la pel·lícula Cars"
+                        >
+                    </a>
+                    <h3>Cars</h3>
+                    <p class="any">2006</p>
+                </article>
 
-            <article>
-                <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdpaG9_xUKsnrxbjnYTEzQZggmTpTK_QVCDHa_9p1hZQ&amp;s">
-                    <img
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdpaG9_xUKsnrxbjnYTEzQZggmTpTK_QVCDHa_9p1hZQ&amp;s"
-                        height="175"
-                        alt="Cartell de la pel·lícula Cars 2"
-                    >
-                </a>
-                <h3>Cars 2</h3>
-                <p>2011</p>
-            </article>
+                <article class="targeta">
+                    <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdpaG9_xUKsnrxbjnYTEzQZggmTpTK_QVCDHa_9p1hZQ&amp;s">
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdpaG9_xUKsnrxbjnYTEzQZggmTpTK_QVCDHa_9p1hZQ&amp;s"
+                            height="175"
+                            alt="Cartell de la pel·lícula Cars 2"
+                        >
+                    </a>
+                    <h3>Cars 2</h3>
+                    <p class="any">2011</p>
+                </article>
 
-            <article>
-                <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg5-tRcr5pNvxtUXB5RJ9LEm1X4_PqdEuH5nnNkQkObg&amp;s=10">
-                    <img
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg5-tRcr5pNvxtUXB5RJ9LEm1X4_PqdEuH5nnNkQkObg&amp;s=10"
-                        height="175"
-                        alt="Cartell de la pel·lícula Cars 3"
-                    >
-                </a>
-                <h3>Cars 3</h3>
-                <p>2017</p>
-            </article>
+                <article class="targeta">
+                    <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg5-tRcr5pNvxtUXB5RJ9LEm1X4_PqdEuH5nnNkQkObg&amp;s=10">
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg5-tRcr5pNvxtUXB5RJ9LEm1X4_PqdEuH5nnNkQkObg&amp;s=10"
+                            height="175"
+                            alt="Cartell de la pel·lícula Cars 3"
+                        >
+                    </a>
+                    <h3>Cars 3</h3>
+                    <p class="any">2017</p>
+                </article>
+            </div>
         </section>
     </main>
 
